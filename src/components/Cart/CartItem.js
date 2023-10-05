@@ -1,9 +1,10 @@
-import { Table } from "react-bootstrap";
+import { Container, Table } from "react-bootstrap";
 import { Button } from "bootstrap";
 const CartItem = (props) => {
   const price = `$${props.price.toFixed(2)}`;
 console.log(props)
   return (
+    <Container>
     <li>
       <div>
         
@@ -18,6 +19,7 @@ console.log(props)
         <button onClick={props.onAdd}>+</button>
       </div>
     </li>
+    </Container>
   );
   }
 export default CartItem;

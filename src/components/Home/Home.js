@@ -8,6 +8,7 @@ const Home = ()=>{
 return (
 
     <>
+    <HeaderSite/>
  <Container>
     <h1 className="center m-5" style={{textAlign:"center"}} > The Generics</h1>
     <Button>Get Our Latest Album</Button>

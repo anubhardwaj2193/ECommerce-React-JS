@@ -1,10 +1,12 @@
 import React from "react";
 import { Container,Button ,Image,} from "react-bootstrap";
+import HeaderSite from "../UI/HeaderSite";
 
 const About = ()=>{
 
 return(
 <>
+<HeaderSite/>
  <Container>
     <h1 className="center m-5" style={{textAlign:"center"}} > The Generics</h1>
     <Button className="d-flex justify-content-center">Get Our Latest Album</Button>
