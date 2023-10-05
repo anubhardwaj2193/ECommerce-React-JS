@@ -9,16 +9,20 @@ import Home from './components/Home/Home';
 import About from './components/About/About'
 import StoreData from "./components/StorePage/StoreData";
 import Contact from './components/Contact/Contact'
+import ProductDetail from "./components/StorePage/ProductDetail";
+i}
 
 
 
 const routeDefinitions = createRoutesFromElements(
 
   <Route>
-    <Route path='/' element={<Home/>}/>
+    <Route path='/' element={<Home/>} />
     <Route path='/store' element={<StoreData/>}/>
     <Route path='/about' element={<About/>}/>
+    <Route path="/store/:id" element={<ProductDetail/>}/>
     <Route path='/contact' element={<Contact/>}/>
+
 
   </Route>
 )
