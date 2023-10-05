@@ -10,18 +10,23 @@ import About from './components/About/About'
 import StoreData from "./components/StorePage/StoreData";
 import Contact from './components/Contact/Contact'
 import ProductDetail from "./components/StorePage/ProductDetail";
-i}
+import Login from "./components/Authenticate/Login";
 
 
 
 const routeDefinitions = createRoutesFromElements(
 
   <Route>
-    <Route path='/' element={<Home/>} />
-    <Route path='/store' element={<StoreData/>}/>
-    <Route path='/about' element={<About/>}/>
-    <Route path="/store/:id" element={<ProductDetail/>}/>
-    <Route path='/contact' element={<Contact/>}/>
+    <Route path="/" element={<HeaderSite/>} children={[
+      <Route path='/' element={<Home/>} />,
+ <Route path='/store' element={<StoreData/>}/>,
+ <Route path='/about' element={<About/>}/>,
+ <Route path="/store/:id" element={<ProductDetail/>}/>,
+ <Route path='/contact' element={<Contact/>}/>,
+ <Route path="login" element={<Login/>}/>
+    ]}/>
+    
+   
 
 
   </Route>

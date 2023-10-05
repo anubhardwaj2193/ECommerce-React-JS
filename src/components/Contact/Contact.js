@@ -39,7 +39,7 @@ export default function App() {
   return (
 
     <React.Fragment>
-    <HeaderSite/>
+  
     <form id='form' className='text-center' style={{ width: '100%', maxWidth: '400px',margin:'3rem'  }}>
       <h2>Contact us</h2>
 

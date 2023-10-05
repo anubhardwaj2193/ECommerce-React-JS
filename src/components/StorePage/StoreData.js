@@ -10,7 +10,7 @@ const StoreData = ()=>{
 
 <CartProvider>
     
-    <HeaderSite />
+
     
     
         <div>
