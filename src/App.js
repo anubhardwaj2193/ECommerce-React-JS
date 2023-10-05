@@ -1,10 +1,10 @@
 import Button from "react-bootstrap/Button";
 import "./App.css";
 import HeaderSite from "./components/UI/HeaderSite";
-import ItemList from "./components/Store/ItemList";
-import Home from "./components/Home/Home";
-import About from "./components/About/About";
-import Store from "./components/Store/Store";
+
+import Store from "./components/StorePage/Store";
+import CartProvider from "./components/store/CartProvider";
+
 
 function App() {
   const productsArr = [
@@ -54,12 +54,13 @@ return(
   })
   
   return (
-     <div className="App">
+    <CartProvider>
+    
       <HeaderSite />
       {productsArr.map((item) => (
         <Store key={item.title} item={item} />
       ))}
-    </div>
+    </CartProvider>
   );
 }
 

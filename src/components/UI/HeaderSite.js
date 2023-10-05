@@ -1,5 +1,5 @@
 import { Container,Navbar, Row,Col,Nav,NavDropdown, Button } from "react-bootstrap";
-import ModalItem from "./ModalItem";
+import Cart from "../Cart/Cart";
 
 
 const HeaderSite = ()=>{
@@ -16,7 +16,7 @@ const HeaderSite = ()=>{
                 <Nav.Link href="#About">About</Nav.Link>
               </Nav>
             </Navbar.Collapse>
-            <ModalItem/>
+            <Cart/>
           </Container>
         </Navbar>
       );
